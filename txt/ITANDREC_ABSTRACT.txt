@@ -1,0 +1,6 @@
+The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.
+It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. 
+Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.
+It enables interoperability, data integration, and querying within tourism information systems.
+
+

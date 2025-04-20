@@ -1,0 +1,43 @@
+Description
+The Intelligent Tourism and Recommendations ontology provides a detailed semantic representation of the tourism domain, with a focus on intelligent data processing and personalized recommendations. 
+It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to enable inference and reasoning.
+
+Core Concepts
+Hotel: 
+Represents general lodging businesses. It is a superclass for more specific types such as RuralHotel. 
+Each hotel is described using properties such as hasName, hasStarRating, and hasLocation.
+
+Restaurant: 
+Represents food establishments. 
+Restaurants are modeled with attributes like hasAveragePrice, hasCuisineType, and locatedIn, enabling filtering and recommendation based on customer budget and tastes.
+
+TouristAttraction: 
+Captures points of interest such as monuments, museums, or natural parks. 
+These are usually the main reasons to visit a particular city.
+
+Properties
+Object Properties: Define relationships between instances of different classes. Examples include:
+
+locatedIn – connects a hotel or restaurant to a Location
+
+operatedBy - connects a public transport service to the company that operates it.
+
+Data Properties: Define literal attributes. Examples include:
+
+hasName – assigns a name to a hotel, restaurant, or location
+
+hasAveragePrice – expresses cost information, for filtering options based on budget
+
+hasRating – allows representation of user ratings on a 0 to 5 scale.
+
+Individuals
+The ontology contains a rich set of individuals (named instances) that represent actual or example entities such as hotel_97, restaurant_38, and specific City instances. 
+These individuals are populated with data that allows reasoning engines to simulate recommendations or answer semantic queries.
+
+Rules and Inference
+Using SWRL (Semantic Web Rule Language), the ontology supports rule-based reasoning to infer new facts. 
+Inside Protegé (The software used to develop the ontology) the reasoner used was Pellet.
+
+Extensibility
+The ontology is designed to be extensible and adaptable. 
+New classes, properties, and individuals can be incorporated as the need arises.

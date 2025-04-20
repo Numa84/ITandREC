@@ -1,0 +1,13 @@
+In recent years, the tourism industry has experienced growing availability of digital information and an increase in the demand for personalized experiences. 
+Tourists today seek tailored recommendations that align with their preferences, budgets, and travel purposes. 
+
+Semantic technologies and knowledge representation techniques offer powerful tools to enhance information systems.
+
+The Intelligent Tourism and Recommendations ontology has been developed to address this needs. 
+It is a machine-understandable model of the tourism domain in Spain. 
+This ontology defines the core concepts related to tourism—such as hotels, restaurants, types of lodging, pricing, etc.
+It supports the semantic integration of data from diferent sources and enables advanced reasoning capabilities through 
+the use of OWL (Web Ontology Language) and SWRL (Semantic Web Rule Language).
+
+Designed to serve for intelligent recommendation systems, the ontology aims to support the development of applications
+that can guide users when planning their trips.

@@ -1,0 +1,40 @@
+References
+W3C OWL Working Group. (2012). OWL 2 Web Ontology Language Document Overview (Second Edition). Retrieved from https://www.w3.org/TR/owl2-overview/
+
+W3C. (2012). OWL 2 Web Ontology Language Primer (Second Edition) – Property Characteristics. Retrieved from https://www.w3.org/TR/owl2-primer/#Property_Characteristics
+
+W3C RDF Working Group. (2014). RDF 1.1 Concepts and Abstract Syntax. Retrieved from https://www.w3.org/TR/rdf11-concepts/
+
+W3C SWRL Submission. (2004). SWRL: A Semantic Web Rule Language Combining OWL and RuleML. Retrieved from https://www.w3.org/Submission/SWRL/
+
+
+
+Tools and Plugins
+Protégé Ontology Editor. Stanford Center for Biomedical Informatics Research. Retrieved from https://protege.stanford.edu
+
+Cellfie Plugin for Protégé. Retrieved from https://github.com/protegeproject/cellfie-plugin
+
+Pellet Reasoner for Protégé. Sirin, E., Parsia, B., Grau, B. C., Kalyanpur, A., & Katz, Y. (2007). Pellet: A practical OWL-DL reasoner. Journal of Web Semantics, 5(2), 51–53. Retrieved from https://www.sciencedirect.com/science/article/pii/S240584402302399X
+
+MappingMaster DSL Wiki. Retrieved from https://github.com/protegeproject/mapping-master/wiki/MappingMasterDSL
+
+Widoco – Documentation Generator for Ontologies. Retrieved from https://dgarijo.github.io/Widoco/
+
+
+Web Resources and Ontologies
+AURORAL Tourism Ontology. Retrieved from https://auroral.iot.linkeddata.es/def/tour/#intro
+
+Core.ac.uk - Semantic Technologies in Tourism. Retrieved from https://core.ac.uk/reader/225609280
+
+Open Research Europe - Smart Tourism Systems. Retrieved from https://open-research-europe.ec.europa.eu/articles/5-1
+
+WebVOWL – Visual Notation for OWL Ontologies. Retrieved from https://service.tib.eu/webvowl/
+
+VEBVOWL – Visual Editor for OWL Ontologies. (No official site available; included as related visual ontology tool.)
+
+DBpedia – A Crowdsourced Community Effort to Extract Structured Information from Wikipedia. Retrieved from https://www.dbpedia.org
+
+XML and Datatype References
+W3Schools – XML Schema Date/Time Datatypes. Retrieved from https://www.w3schools.com/xml/schema_dtypes_date.asp
+
+Datypic – XML Schema anySimpleType. Retrieved from https://www.datypic.com/sc/xsd/t-xsd_anySimpleType.html

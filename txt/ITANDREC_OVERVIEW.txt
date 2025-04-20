@@ -1,0 +1,28 @@
+The Intelligent Tourism and Recommendations ontology is structured to represent key concepts and relationships within the tourism sector, 
+with a focus on enhancing data interoperability, semantic reasoning, and personalized recommendation capabilities. 
+
+Built using OWL and enriched with SWRL rules, the ontology provides a semantic foundation for tourism-related applications.
+
+The ontology is composed of:
+
+Classes (Concepts): 
+The ontology defines 47 classes that capture the entities in the tourism domain. 
+These include core concepts such as Hotel, RuralHotel, Restaurant, TouristAttraction, and Location. 
+Subclass relationships are used to express hierarchical structures (e.g., RuralHotel is a subclass of Hotel).
+
+Properties (Relationships): 
+A total of 15 properties describe how classes interact and what attributes they possess. 
+These include object properties such as locatedIn and data properties like hasName and hasAveragePrice. 
+These properties enable the ontology to represent contextual information.
+
+Individuals (Instances): 
+The ontology includes numerous named individuals that represent real or hypothetical instances of hotels, restaurants, and other tourism-related entities. 
+These instances are annotated using rdfs.
+
+Rules and Constraints: 
+The ontology incorporates SWRL rules to define logical conditions and enhance inference capabilities.
+These rules allow the system to derive new knowledge.
+
+The ontology is designed to be modular and extensible, allowing for easy integration with other domain ontologies.
+
+
