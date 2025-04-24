@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/pedri/ontologies/2025/3/ITANDRECV1.6#"
-     xml:base="http://www.semanticweb.org/pedri/ontologies/2025/3/ITANDRECV1.6"
+<rdf:RDF xmlns="https://github.com/Numa84/ITandREC#"
+     xml:base="https://github.com/Numa84/ITandREC"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,9 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:IntelligentTourismAndRecommendations="http://www.semanticweb.org/pedri/ontologies/2025/3/IntelligentTourismAndRecommendations#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/pedri/ontologies/2025/3/ITANDRECV1.6">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/pedri/ontologies/2025/3/ITANDRECV1.6"/>
+     xmlns:IntelligentTourismAndRecommendations="https://github.com/Numa84/ITandREC#">
+    <owl:Ontology rdf:about="https://github.com/Numa84/ITandREC">
+        <owl:versionIRI rdf:resource="https://github.com/Numa84/ITandREC"/>
         <rdfs:comment>This ontology is about &quot;intelligent tourism&quot;, a term that describes the different POI (points of interest) that there are in different countries.</rdfs:comment>
         <rdfs:isDefinedBy>The authors of this ontology have been:
 
