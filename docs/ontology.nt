@@ -2,7 +2,7 @@
 <https://purl.archive.org/purl/psvazquez/itandrec> <http://www.w3.org/2002/07/owl#versionIRI> <https://purl.archive.org/purl/psvazquez/itandrec> .
 <https://purl.archive.org/purl/psvazquez/itandrec> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology is about \"intelligent tourism\", a term that describes the different POI (points of interest) that there are in different countries." .
 <https://purl.archive.org/purl/psvazquez/itandrec> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The authors of this ontology have been:\n\nPedro Sánchez\n\nGaizka Majdenic\n\nFrancesc Martínez" .
-<https://purl.archive.org/purl/psvazquez/itandrec> <http://www.w3.org/2002/07/owl#versionInfo> "This is V1.7" .
+<https://purl.archive.org/purl/psvazquez/itandrec> <http://www.w3.org/2002/07/owl#versionInfo> "This is V1.8" .
 # 
 # 
 # #################################################################

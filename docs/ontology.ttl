@@ -16,7 +16,7 @@ Pedro Sánchez
 Gaizka Majdenic
 
 Francesc Martínez""" ;
-                                                    owl:versionInfo "This is V1.7" .
+                                                    owl:versionInfo "This is V1.8" .
 
 #################################################################
 #    Annotation properties

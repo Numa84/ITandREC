@@ -600,7 +600,7 @@
     "@id" : "https://purl.archive.org/purl/psvazquez/itandrec"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "This is V1.7"
+    "@value" : "This is V1.8"
   } ]
 }, {
   "@id" : "https://purl.archive.org/purl/psvazquez/itandrec#AndalusianRestaurant",

@@ -4,7 +4,7 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://purl.archive.org/purl/psvazquez/itandrec" ],
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-    "version" : "This is V1.7",
+    "version" : "This is V1.8",
     "comments" : {
       "undefined" : "This ontology is about \"intelligent tourism\", a term that describes the different POI (points of interest) that there are in different countries."
     },
@@ -18,14 +18,14 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "This is V1.7",
+        "value" : "This is V1.8",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -46,7 +46,7 @@
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "8",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "13",
@@ -106,16 +106,16 @@
     "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "85",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "67",
@@ -154,7 +154,7 @@
     "id" : "107",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "23",
@@ -163,7 +163,7 @@
     "id" : "102",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "9",
+    "id" : "2",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "19",
@@ -172,7 +172,7 @@
     "id" : "98",
     "type" : "owl:unionOf"
   }, {
-    "id" : "5",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "25",
@@ -181,16 +181,16 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "88",
+    "id" : "83",
     "type" : "owl:intersectionOf"
-  }, {
-    "id" : "97",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
   }, {
     "id" : "92",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -209,11 +209,11 @@
       "IRI-based" : "Hotel",
       "en" : "Hotel"
     },
-    "subClasses" : [ "2", "3", "4", "5", "6", "7" ],
+    "subClasses" : [ "4", "5", "6", "7", "8", "9" ],
     "comment" : {
       "en" : "A place that offers lodging for travelers"
     },
-    "id" : "0",
+    "id" : "3",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#City",
@@ -294,6 +294,12 @@
         "IRI-based" : "Cádiz"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#SantSebastià",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "labels" : {
+        "IRI-based" : "SantSebastià"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#SanSebastián",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "annotations" : {
@@ -306,12 +312,6 @@
       },
       "labels" : {
         "IRI-based" : "SanSebastián"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#SantSebastià",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "labels" : {
-        "IRI-based" : "SantSebastià"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#Barcelona",
@@ -417,7 +417,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_91",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event named Carnaval Madrid"
       },
       "labels" : {
         "IRI-based" : "event_91",
@@ -427,7 +427,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_100",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event in Barcelona"
       },
       "labels" : {
         "IRI-based" : "event_100",
@@ -447,21 +447,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_94",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Madrid"
+        "undefined" : "A SportsEvent"
       },
       "labels" : {
         "IRI-based" : "event_94",
         "undefined" : "event_94"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_64",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A SportsEvent"
-      },
-      "labels" : {
-        "IRI-based" : "event_64",
-        "undefined" : "event_64"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_42",
@@ -472,6 +462,16 @@
       "labels" : {
         "IRI-based" : "event_42",
         "undefined" : "event_42"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_64",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event in Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "event_64",
+        "undefined" : "event_64"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_96",
@@ -487,7 +487,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_1",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Congreso Cádiz"
+        "undefined" : "An event in Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_1",
@@ -497,7 +497,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_2",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event named Carnaval Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_2",
@@ -507,7 +507,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_7",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event named Festival Madrid"
       },
       "labels" : {
         "IRI-based" : "event_7",
@@ -534,14 +534,14 @@
         "undefined" : "event_33"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_98",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_87",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "A SportsEvent"
       },
       "labels" : {
-        "IRI-based" : "event_98",
-        "undefined" : "event_98"
+        "IRI-based" : "event_87",
+        "undefined" : "event_87"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_21",
@@ -554,14 +554,14 @@
         "undefined" : "event_21"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_87",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_98",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Madrid"
+        "undefined" : "A SportsEvent"
       },
       "labels" : {
-        "IRI-based" : "event_87",
-        "undefined" : "event_87"
+        "IRI-based" : "event_98",
+        "undefined" : "event_98"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_57",
@@ -577,67 +577,67 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_68",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event in Pamplona"
       },
       "labels" : {
         "IRI-based" : "event_68",
         "undefined" : "event_68"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_23",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Congreso Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "event_23",
-        "undefined" : "event_23"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_78",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Cádiz"
+        "undefined" : "A SportsEvent"
       },
       "labels" : {
         "IRI-based" : "event_78",
         "undefined" : "event_78"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_23",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event in Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "event_23",
+        "undefined" : "event_23"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_48",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Bilbao"
+        "undefined" : "A SportsEvent"
       },
       "labels" : {
         "IRI-based" : "event_48",
         "undefined" : "event_48"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_47",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Festival Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "event_47",
-        "undefined" : "event_47"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_36",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A SportsEvent"
+        "undefined" : "An event named Concierto Pamplona"
       },
       "labels" : {
         "IRI-based" : "event_36",
         "undefined" : "event_36"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_47",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event in Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "event_47",
+        "undefined" : "event_47"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_39",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Barcelona"
+        "undefined" : "An event named Feria Barcelona"
       },
       "labels" : {
         "IRI-based" : "event_39",
@@ -669,7 +669,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_52",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Madrid"
+        "undefined" : "A Beach"
       },
       "labels" : {
         "IRI-based" : "attraction_52",
@@ -686,16 +686,6 @@
         "undefined" : "attraction_30"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_54",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction in Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_54",
-        "undefined" : "attraction_54"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_76",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -706,10 +696,20 @@
         "undefined" : "attraction_76"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_54",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction in Toledo"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_54",
+        "undefined" : "attraction_54"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_97",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Catedral Zaragoza"
+        "undefined" : "A touristic attraction in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "attraction_97",
@@ -729,7 +729,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_78",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Bilbao"
+        "undefined" : "A touristic attraction named: Castillo Bilbao"
       },
       "labels" : {
         "IRI-based" : "attraction_78",
@@ -739,7 +739,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_77",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Palacio Pamplona"
+        "undefined" : "A touristic attraction in Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_77",
@@ -749,7 +749,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_14",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Pamplona"
+        "undefined" : "A Beach"
       },
       "labels" : {
         "IRI-based" : "attraction_14",
@@ -759,7 +759,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_79",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Beach"
+        "undefined" : "A touristic attraction named: Catedral Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_79",
@@ -779,7 +779,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_90",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Beach"
+        "undefined" : "A touristic attraction named: Museo Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_90",
@@ -809,37 +809,37 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_94",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Toledo"
+        "undefined" : "A Beach"
       },
       "labels" : {
         "IRI-based" : "attraction_94",
         "undefined" : "attraction_94"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_71",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction in Madrid"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_71",
-        "undefined" : "attraction_71"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_93",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Beach"
+        "undefined" : "A touristic attraction in Toledo"
       },
       "labels" : {
         "IRI-based" : "attraction_93",
         "undefined" : "attraction_93"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_71",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Parque Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_71",
+        "undefined" : "attraction_71"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_40",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Palacio Cádiz"
+        "undefined" : "A touristic attraction in Cádiz"
       },
       "labels" : {
         "IRI-based" : "attraction_40",
@@ -869,7 +869,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_66",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in San Sebastián"
+        "undefined" : "A Beach"
       },
       "labels" : {
         "IRI-based" : "attraction_66",
@@ -879,7 +879,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_44",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Sevilla"
+        "undefined" : "A touristic attraction named: Museo Sevilla"
       },
       "labels" : {
         "IRI-based" : "attraction_44",
@@ -909,7 +909,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_5",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Cádiz"
+        "undefined" : "A Beach"
       },
       "labels" : {
         "IRI-based" : "attraction_5",
@@ -919,7 +919,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_7",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Beach"
+        "undefined" : "A touristic attraction named: Catedral Sevilla"
       },
       "labels" : {
         "IRI-based" : "attraction_7",
@@ -985,7 +985,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_46",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Sabor Málaga"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_46",
@@ -995,7 +995,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_24",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Gourmet Sevilla"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_24",
@@ -1015,7 +1015,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_70",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Andalusian"
+        "undefined" : "A restaurant in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "restaurant_70",
@@ -1025,7 +1025,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_50",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Barcelona"
+        "undefined" : "Restaurante Delicia Barcelona"
       },
       "labels" : {
         "IRI-based" : "restaurant_50",
@@ -1035,7 +1035,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_30",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Pamplona"
+        "undefined" : "Restaurante Delicia Pamplona"
       },
       "labels" : {
         "IRI-based" : "restaurant_30",
@@ -1052,6 +1052,16 @@
         "undefined" : "restaurant_73"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_98",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Type of cuisine:Andalusian"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_98",
+        "undefined" : "restaurant_98"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_32",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -1062,20 +1072,10 @@
         "undefined" : "restaurant_32"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_98",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A restaurant in Sevilla"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_98",
-        "undefined" : "restaurant_98"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_75",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Andalusian"
+        "undefined" : "A restaurant in Sevilla"
       },
       "labels" : {
         "IRI-based" : "restaurant_75",
@@ -1085,7 +1085,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_78",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Valencia"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_78",
@@ -1105,7 +1105,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_36",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Zaragoza"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_36",
@@ -1115,7 +1115,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_57",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Gourmet Málaga"
+        "undefined" : "A restaurant in Málaga"
       },
       "labels" : {
         "IRI-based" : "restaurant_57",
@@ -1125,7 +1125,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_16",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Andalusian"
+        "undefined" : "Restaurante Fusión Pamplona"
       },
       "labels" : {
         "IRI-based" : "restaurant_16",
@@ -1145,7 +1145,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_3",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Andalusian"
+        "undefined" : "A restaurant in Valencia"
       },
       "labels" : {
         "IRI-based" : "restaurant_3",
@@ -1155,7 +1155,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_60",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Delicia San Sebastián"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_60",
@@ -1165,21 +1165,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_41",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición Zaragoza"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_41",
         "undefined" : "restaurant_41"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_40",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Andalusian"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_40",
-        "undefined" : "restaurant_40"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_84",
@@ -1192,10 +1182,20 @@
         "undefined" : "restaurant_84"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_40",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Gourmet Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_40",
+        "undefined" : "restaurant_40"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_87",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Valencia"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_87",
@@ -1205,7 +1205,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_86",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Cádiz"
+        "undefined" : "Type of cuisine:Andalusian"
       },
       "labels" : {
         "IRI-based" : "restaurant_86",
@@ -1249,37 +1249,37 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_47",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición San Sebastián"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_47",
         "undefined" : "restaurant_47"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_79",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A restaurant in Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_79",
-        "undefined" : "restaurant_79"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_100",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Toledo"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_100",
         "undefined" : "restaurant_100"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_38",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_79",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "Type of cuisine:Italian"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_79",
+        "undefined" : "restaurant_79"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_38",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Delicia Pamplona"
       },
       "labels" : {
         "IRI-based" : "restaurant_38",
@@ -1299,7 +1299,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_17",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Cádiz"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_17",
@@ -1309,7 +1309,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_19",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Madrid"
+        "undefined" : "Restaurante Fusión Madrid"
       },
       "labels" : {
         "IRI-based" : "restaurant_19",
@@ -1319,7 +1319,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_6",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Sabor Sevilla"
+        "undefined" : "A restaurant in Sevilla"
       },
       "labels" : {
         "IRI-based" : "restaurant_6",
@@ -1339,7 +1339,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_93",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Sabor Zaragoza"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_93",
@@ -1369,7 +1369,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_63",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición Cádiz"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_63",
@@ -1389,7 +1389,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_42",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Sevilla"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_42",
@@ -1399,7 +1399,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_97",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Zaragoza"
+        "undefined" : "Type of cuisine:Italian"
       },
       "labels" : {
         "IRI-based" : "restaurant_97",
@@ -1409,7 +1409,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_31",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Italian"
+        "undefined" : "Restaurante Tradición Madrid"
       },
       "labels" : {
         "IRI-based" : "restaurant_31",
@@ -1429,7 +1429,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_67",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Toledo"
+        "undefined" : "A restaurant in Toledo"
       },
       "labels" : {
         "IRI-based" : "restaurant_67",
@@ -1449,13 +1449,13 @@
       "IRI-based" : "TopHotel",
       "undefined" : "A top hotel."
     },
-    "intersection" : [ "0" ],
+    "intersection" : [ "3" ],
     "comment" : {
       "undefined" : "A hotel with a high rating.\nHas a rating greater or equal to 4.9"
     },
     "attributes" : [ "intersection" ],
-    "id" : "6",
-    "superClasses" : [ "0" ]
+    "id" : "8",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#Event",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -1536,16 +1536,6 @@
         "undefined" : "transport_44"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_43",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "transport_43",
-        "undefined" : "transport_43"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_21",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -1554,6 +1544,16 @@
       "labels" : {
         "IRI-based" : "transport_21",
         "undefined" : "transport_21"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_43",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "transport_43",
+        "undefined" : "transport_43"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_53",
@@ -1596,14 +1596,14 @@
         "undefined" : "transport_61"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_60",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_5",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Madrid"
+        "undefined" : "A public transport in Cádiz"
       },
       "labels" : {
-        "IRI-based" : "transport_60",
-        "undefined" : "transport_60"
+        "IRI-based" : "transport_5",
+        "undefined" : "transport_5"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_93",
@@ -1616,14 +1616,14 @@
         "undefined" : "transport_93"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_5",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_60",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Cádiz"
+        "undefined" : "A public transport in Madrid"
       },
       "labels" : {
-        "IRI-based" : "transport_5",
-        "undefined" : "transport_5"
+        "IRI-based" : "transport_60",
+        "undefined" : "transport_60"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_1",
@@ -1657,7 +1657,7 @@
       "IRI-based" : "LodgingBusiness",
       "en" : "LodgingBusiness"
     },
-    "subClasses" : [ "0" ],
+    "subClasses" : [ "3" ],
     "comment" : {
       "en" : "business that gives people a place to sleep."
     },
@@ -1675,7 +1675,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_90",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Valencia"
+        "undefined" : "A CulturalEvent"
       },
       "labels" : {
         "IRI-based" : "event_90",
@@ -1685,41 +1685,31 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_71",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event in Málaga"
       },
       "labels" : {
         "IRI-based" : "event_71",
         "undefined" : "event_71"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_70",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Congreso Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "event_70",
-        "undefined" : "event_70"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_92",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event in Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_92",
         "undefined" : "event_92"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_51",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_70",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event in Zaragoza"
       },
       "labels" : {
-        "IRI-based" : "event_51",
-        "undefined" : "event_51"
+        "IRI-based" : "event_70",
+        "undefined" : "event_70"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_95",
@@ -1732,6 +1722,16 @@
         "undefined" : "event_95"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_51",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A CulturalEvent"
+      },
+      "labels" : {
+        "IRI-based" : "event_51",
+        "undefined" : "event_51"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_73",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -1742,30 +1742,30 @@
         "undefined" : "event_73"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_31",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A CulturalEvent"
-      },
-      "labels" : {
-        "IRI-based" : "event_31",
-        "undefined" : "event_31"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_20",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event in Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_20",
         "undefined" : "event_20"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_31",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event named Feria Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "event_31",
+        "undefined" : "event_31"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_52",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Congreso Toledo"
+        "undefined" : "A CulturalEvent"
       },
       "labels" : {
         "IRI-based" : "event_52",
@@ -1775,7 +1775,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_85",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event in San Sebastián"
       },
       "labels" : {
         "IRI-based" : "event_85",
@@ -1785,7 +1785,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_3",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Congreso Bilbao"
+        "undefined" : "An event in Bilbao"
       },
       "labels" : {
         "IRI-based" : "event_3",
@@ -1802,10 +1802,20 @@
         "undefined" : "event_29"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_55",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_66",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "A CulturalEvent"
+      },
+      "labels" : {
+        "IRI-based" : "event_66",
+        "undefined" : "event_66"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_55",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event named Feria Zaragoza"
       },
       "labels" : {
         "IRI-based" : "event_55",
@@ -1822,20 +1832,10 @@
         "undefined" : "event_22"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_66",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Festival Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "event_66",
-        "undefined" : "event_66"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_43",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Madrid"
+        "undefined" : "An event named Festival Madrid"
       },
       "labels" : {
         "IRI-based" : "event_43",
@@ -1855,7 +1855,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_45",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Congreso Barcelona"
+        "undefined" : "A CulturalEvent"
       },
       "labels" : {
         "IRI-based" : "event_45",
@@ -1865,7 +1865,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_12",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalEvent"
+        "undefined" : "An event named Feria Barcelona"
       },
       "labels" : {
         "IRI-based" : "event_12",
@@ -1875,7 +1875,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_56",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Barcelona"
+        "undefined" : "A CulturalEvent"
       },
       "labels" : {
         "IRI-based" : "event_56",
@@ -1895,7 +1895,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_27",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Bilbao"
+        "undefined" : "A CulturalEvent"
       },
       "labels" : {
         "IRI-based" : "event_27",
@@ -1905,7 +1905,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_38",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Carnaval Sevilla"
+        "undefined" : "An event in Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_38",
@@ -1950,7 +1950,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_96",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalAttraction"
+        "undefined" : "A touristic attraction in Madrid"
       },
       "labels" : {
         "IRI-based" : "attraction_96",
@@ -1960,7 +1960,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_75",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Catedral Toledo"
+        "undefined" : "A CulturalAttraction"
       },
       "labels" : {
         "IRI-based" : "attraction_75",
@@ -1970,7 +1970,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_31",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Málaga"
+        "undefined" : "A touristic attraction named: Palacio Málaga"
       },
       "labels" : {
         "IRI-based" : "attraction_31",
@@ -1990,7 +1990,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_99",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalAttraction"
+        "undefined" : "A touristic attraction in Bilbao"
       },
       "labels" : {
         "IRI-based" : "attraction_99",
@@ -2000,41 +2000,41 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_13",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalAttraction"
+        "undefined" : "A touristic attraction in Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_13",
         "undefined" : "attraction_13"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_49",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_16",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in San Sebastián"
+        "undefined" : "A CulturalAttraction"
       },
       "labels" : {
-        "IRI-based" : "attraction_49",
-        "undefined" : "attraction_49"
+        "IRI-based" : "attraction_16",
+        "undefined" : "attraction_16"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_27",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Málaga"
+        "undefined" : "A CulturalAttraction"
       },
       "labels" : {
         "IRI-based" : "attraction_27",
         "undefined" : "attraction_27"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_16",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_49",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Barcelona"
+        "undefined" : "A touristic attraction named: Castillo San Sebastián"
       },
       "labels" : {
-        "IRI-based" : "attraction_16",
-        "undefined" : "attraction_16"
+        "IRI-based" : "attraction_49",
+        "undefined" : "attraction_49"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_17",
@@ -2060,7 +2060,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_19",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A CulturalAttraction"
+        "undefined" : "A touristic attraction named: Palacio Barcelona"
       },
       "labels" : {
         "IRI-based" : "attraction_19",
@@ -2205,16 +2205,6 @@
         "undefined" : "transport_33"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_10",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Sevilla"
-      },
-      "labels" : {
-        "IRI-based" : "transport_10",
-        "undefined" : "transport_10"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_32",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2233,6 +2223,16 @@
       "labels" : {
         "IRI-based" : "transport_65",
         "undefined" : "transport_65"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_10",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "transport_10",
+        "undefined" : "transport_10"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_42",
@@ -2255,16 +2255,6 @@
         "undefined" : "transport_75"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_51",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Madrid"
-      },
-      "labels" : {
-        "IRI-based" : "transport_51",
-        "undefined" : "transport_51"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_84",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2275,24 +2265,14 @@
         "undefined" : "transport_84"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_4",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_51",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Zaragoza"
+        "undefined" : "A public transport in Madrid"
       },
       "labels" : {
-        "IRI-based" : "transport_4",
-        "undefined" : "transport_4"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_94",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "transport_94",
-        "undefined" : "transport_94"
+        "IRI-based" : "transport_51",
+        "undefined" : "transport_51"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_50",
@@ -2305,14 +2285,24 @@
         "undefined" : "transport_50"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_92",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_94",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Madrid"
+        "undefined" : "A public transport in Málaga"
       },
       "labels" : {
-        "IRI-based" : "transport_92",
-        "undefined" : "transport_92"
+        "IRI-based" : "transport_94",
+        "undefined" : "transport_94"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_4",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "transport_4",
+        "undefined" : "transport_4"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_100",
@@ -2323,6 +2313,16 @@
       "labels" : {
         "IRI-based" : "transport_100",
         "undefined" : "transport_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_92",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "transport_92",
+        "undefined" : "transport_92"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_9",
@@ -2390,16 +2390,6 @@
         "undefined" : "transport_58"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_45",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "transport_45",
-        "undefined" : "transport_45"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_23",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2408,6 +2398,16 @@
       "labels" : {
         "IRI-based" : "transport_23",
         "undefined" : "transport_23"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_45",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "transport_45",
+        "undefined" : "transport_45"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_66",
@@ -2440,16 +2440,6 @@
         "undefined" : "transport_97"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_96",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "transport_96",
-        "undefined" : "transport_96"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_74",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2458,6 +2448,16 @@
       "labels" : {
         "IRI-based" : "transport_74",
         "undefined" : "transport_74"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_96",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "transport_96",
+        "undefined" : "transport_96"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_62",
@@ -2470,16 +2470,6 @@
         "undefined" : "transport_62"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_71",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Barcelona"
-      },
-      "labels" : {
-        "IRI-based" : "transport_71",
-        "undefined" : "transport_71"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_82",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2488,6 +2478,16 @@
       "labels" : {
         "IRI-based" : "transport_82",
         "undefined" : "transport_82"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_71",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "transport_71",
+        "undefined" : "transport_71"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_6",
@@ -2544,7 +2544,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_49",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Málaga"
+        "undefined" : "Restaurante Sabor Málaga"
       },
       "labels" : {
         "IRI-based" : "restaurant_49",
@@ -2554,7 +2554,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_37",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Valencia"
+        "undefined" : "Type of cuisine:Mediterranean"
       },
       "labels" : {
         "IRI-based" : "restaurant_37",
@@ -2564,21 +2564,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_29",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Mediterranean"
+        "undefined" : "Restaurante Delicia Valencia"
       },
       "labels" : {
         "IRI-based" : "restaurant_29",
         "undefined" : "restaurant_29"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_91",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Mediterranean"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_91",
-        "undefined" : "restaurant_91"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_80",
@@ -2591,30 +2581,40 @@
         "undefined" : "restaurant_80"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_61",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_91",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Gourmet Madrid"
+        "undefined" : "Restaurante Gourmet Zaragoza"
       },
       "labels" : {
-        "IRI-based" : "restaurant_61",
-        "undefined" : "restaurant_61"
+        "IRI-based" : "restaurant_91",
+        "undefined" : "restaurant_91"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_94",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Mediterranean"
+        "undefined" : "A restaurant in Sevilla"
       },
       "labels" : {
         "IRI-based" : "restaurant_94",
         "undefined" : "restaurant_94"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_71",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_61",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "Type of cuisine:Mediterranean"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_61",
+        "undefined" : "restaurant_61"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_71",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A restaurant in Cádiz"
       },
       "labels" : {
         "IRI-based" : "restaurant_71",
@@ -2634,11 +2634,31 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_56",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición Madrid"
+        "undefined" : "Type of cuisine:Mediterranean"
       },
       "labels" : {
         "IRI-based" : "restaurant_56",
         "undefined" : "restaurant_56"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_11",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Gourmet Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_11",
+        "undefined" : "restaurant_11"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_66",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Fusión Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_66",
+        "undefined" : "restaurant_66"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_77",
@@ -2649,26 +2669,6 @@
       "labels" : {
         "IRI-based" : "restaurant_77",
         "undefined" : "restaurant_77"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_66",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A restaurant in Barcelona"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_66",
-        "undefined" : "restaurant_66"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_11",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Mediterranean"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_11",
-        "undefined" : "restaurant_11"
       }
     } ],
     "comment" : {
@@ -2729,15 +2729,6 @@
         "IRI-based" : "MetroPamplona"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroBarcelona",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport company in Barcelona"
-      },
-      "labels" : {
-        "IRI-based" : "MetroBarcelona"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TransToledo",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2747,13 +2738,13 @@
         "IRI-based" : "TransToledo"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TransPamplona",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroBarcelona",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport company in Pamplona"
+        "undefined" : "A public transport company in Barcelona"
       },
       "labels" : {
-        "IRI-based" : "TransPamplona"
+        "IRI-based" : "MetroBarcelona"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanValencia",
@@ -2763,6 +2754,15 @@
       },
       "labels" : {
         "IRI-based" : "UrbanValencia"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TransPamplona",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport company in Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "TransPamplona"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanMálaga",
@@ -2837,15 +2837,6 @@
         "IRI-based" : "MoviSevilla"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroBilbao",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport company in Bilbao"
-      },
-      "labels" : {
-        "IRI-based" : "MetroBilbao"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MoviSanSebastián",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2853,6 +2844,15 @@
       },
       "labels" : {
         "IRI-based" : "MoviSanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroBilbao",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport company in Bilbao"
+      },
+      "labels" : {
+        "IRI-based" : "MetroBilbao"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroMadrid",
@@ -2891,15 +2891,6 @@
         "IRI-based" : "MoviMálaga"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanToledo",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport company in Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "UrbanToledo"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanBilbao",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -2907,6 +2898,15 @@
       },
       "labels" : {
         "IRI-based" : "UrbanBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanToledo",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport company in Toledo"
+      },
+      "labels" : {
+        "IRI-based" : "UrbanToledo"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#UrbanSanSebastián",
@@ -3107,15 +3107,6 @@
         "IRI-based" : "UrbanMadrid"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TransValencia",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport company in Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "TransValencia"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#CityBilbao",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -3123,6 +3114,15 @@
       },
       "labels" : {
         "IRI-based" : "CityBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TransValencia",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport company in Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "TransValencia"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MetroCádiz",
@@ -3183,16 +3183,6 @@
       "en" : "Museum"
     },
     "individuals" : [ {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_84",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_84",
-        "undefined" : "attraction_84"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_51",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -3201,6 +3191,26 @@
       "labels" : {
         "IRI-based" : "attraction_51",
         "undefined" : "attraction_51"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_84",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A Museum"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_84",
+        "undefined" : "attraction_84"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_98",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction in Cádiz"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_98",
+        "undefined" : "attraction_98"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_65",
@@ -3213,40 +3223,30 @@
         "undefined" : "attraction_65"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_98",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Museum"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_98",
-        "undefined" : "attraction_98"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_86",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Museum"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_86",
-        "undefined" : "attraction_86"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_53",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Museum"
+        "undefined" : "A touristic attraction named: Catedral Valencia"
       },
       "labels" : {
         "IRI-based" : "attraction_53",
         "undefined" : "attraction_53"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_86",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Museo Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_86",
+        "undefined" : "attraction_86"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_89",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Museum"
+        "undefined" : "A touristic attraction named: Castillo Zaragoza"
       },
       "labels" : {
         "IRI-based" : "attraction_89",
@@ -3256,7 +3256,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_67",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Parque Cádiz"
+        "undefined" : "A Museum"
       },
       "labels" : {
         "IRI-based" : "attraction_67",
@@ -3273,16 +3273,6 @@
         "undefined" : "attraction_45"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_33",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction in Barcelona"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_33",
-        "undefined" : "attraction_33"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_55",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -3296,17 +3286,27 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_88",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Palacio Toledo"
+        "undefined" : "A Museum"
       },
       "labels" : {
         "IRI-based" : "attraction_88",
         "undefined" : "attraction_88"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_33",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Museo Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_33",
+        "undefined" : "attraction_33"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_58",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Catedral Málaga"
+        "undefined" : "A Museum"
       },
       "labels" : {
         "IRI-based" : "attraction_58",
@@ -3326,7 +3326,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_29",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Museum"
+        "undefined" : "A touristic attraction in San Sebastián"
       },
       "labels" : {
         "IRI-based" : "attraction_29",
@@ -3336,7 +3336,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_1",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Zaragoza"
+        "undefined" : "A touristic attraction in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "attraction_1",
@@ -3346,7 +3346,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_3",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Zaragoza"
+        "undefined" : "A Museum"
       },
       "labels" : {
         "IRI-based" : "attraction_3",
@@ -3376,7 +3376,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_70",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Pamplona"
+        "undefined" : "A touristic attraction named: Castillo Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_70",
@@ -3396,7 +3396,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_60",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Museum"
+        "undefined" : "A touristic attraction named: Parque Cádiz"
       },
       "labels" : {
         "IRI-based" : "attraction_60",
@@ -3420,7 +3420,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_14",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Valencia"
+        "undefined" : "A restaurant in Valencia"
       },
       "labels" : {
         "IRI-based" : "restaurant_14",
@@ -3430,7 +3430,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_59",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Mexican"
+        "undefined" : "Restaurante Fusión Cádiz"
       },
       "labels" : {
         "IRI-based" : "restaurant_59",
@@ -3440,21 +3440,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_18",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Cádiz"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_18",
         "undefined" : "restaurant_18"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_39",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A restaurant in Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_39",
-        "undefined" : "restaurant_39"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_28",
@@ -3465,6 +3455,16 @@
       "labels" : {
         "IRI-based" : "restaurant_28",
         "undefined" : "restaurant_28"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_39",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A restaurant in Toledo"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_39",
+        "undefined" : "restaurant_39"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_1",
@@ -3480,7 +3480,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_5",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Delicia Pamplona"
+        "undefined" : "A restaurant in Pamplona"
       },
       "labels" : {
         "IRI-based" : "restaurant_5",
@@ -3520,7 +3520,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_52",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Delicia Zaragoza"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_52",
@@ -3537,50 +3537,50 @@
         "undefined" : "restaurant_95"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_43",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Mexican"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_43",
-        "undefined" : "restaurant_43"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_21",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Mexican"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_21",
-        "undefined" : "restaurant_21"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_10",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Delicia Cádiz"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_10",
         "undefined" : "restaurant_10"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_21",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A restaurant in Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_21",
+        "undefined" : "restaurant_21"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_76",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Valencia"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_76",
         "undefined" : "restaurant_76"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_43",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A restaurant in Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_43",
+        "undefined" : "restaurant_43"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_34",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Sevilla"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_34",
@@ -3600,7 +3600,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_55",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Fusión Málaga"
+        "undefined" : "Type of cuisine:Mexican"
       },
       "labels" : {
         "IRI-based" : "restaurant_55",
@@ -3610,7 +3610,7 @@
     "comment" : {
       "en" : "A restaurant offering Mexican cuisine."
     },
-    "id" : "83",
+    "id" : "85",
     "superClasses" : [ "20" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#TouristHotel",
@@ -3621,6 +3621,16 @@
       "en" : "TouristHotel"
     },
     "individuals" : [ {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_23",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Vista Toledo"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_23",
+        "undefined" : "hotel_23"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_34",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -3641,70 +3651,60 @@
         "undefined" : "hotel_12"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_23",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An hotel located in  Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_23",
-        "undefined" : "hotel_23"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_13",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 95"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_13",
-        "undefined" : "hotel_13"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_46",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 292"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_46",
-        "undefined" : "hotel_46"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_35",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 59"
+        "undefined" : "Hotel name:  Hotel Del Mar Pamplona"
       },
       "labels" : {
         "IRI-based" : "hotel_35",
         "undefined" : "hotel_35"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_47",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_46",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  San Sebastián"
+        "undefined" : "Hotel name:  Hotel Vista Sevilla"
       },
       "labels" : {
-        "IRI-based" : "hotel_47",
-        "undefined" : "hotel_47"
+        "IRI-based" : "hotel_46",
+        "undefined" : "hotel_46"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_13",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Del Mar Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_13",
+        "undefined" : "hotel_13"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_7",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 76"
+        "undefined" : "Hotel name:  Hotel Royal Valencia"
       },
       "labels" : {
         "IRI-based" : "hotel_7",
         "undefined" : "hotel_7"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_47",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Del Mar San Sebastián"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_47",
+        "undefined" : "hotel_47"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_25",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Sevilla"
+        "undefined" : "A 92"
       },
       "labels" : {
         "IRI-based" : "hotel_25",
@@ -3714,7 +3714,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_48",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 195"
+        "undefined" : "An hotel located in  Málaga"
       },
       "labels" : {
         "IRI-based" : "hotel_48",
@@ -3734,7 +3734,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_18",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Madrid"
+        "undefined" : "Hotel name:  Hotel Palace Madrid"
       },
       "labels" : {
         "IRI-based" : "hotel_18",
@@ -3744,7 +3744,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_81",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 74"
+        "undefined" : "Hotel name:  Hotel Vista Barcelona"
       },
       "labels" : {
         "IRI-based" : "hotel_81",
@@ -3754,7 +3754,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_82",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 286"
+        "undefined" : "An hotel located in  Bilbao"
       },
       "labels" : {
         "IRI-based" : "hotel_82",
@@ -3764,7 +3764,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_93",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Madrid"
+        "undefined" : "A 177"
       },
       "labels" : {
         "IRI-based" : "hotel_93",
@@ -3774,7 +3774,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_95",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Pamplona"
+        "undefined" : "A 177"
       },
       "labels" : {
         "IRI-based" : "hotel_95",
@@ -3784,11 +3784,21 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_63",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Sol Barcelona"
+        "undefined" : "An hotel located in  Barcelona"
       },
       "labels" : {
         "IRI-based" : "hotel_63",
         "undefined" : "hotel_63"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_20",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_20",
+        "undefined" : "hotel_20"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_31",
@@ -3801,20 +3811,10 @@
         "undefined" : "hotel_31"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_20",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 149"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_20",
-        "undefined" : "hotel_20"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_10",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Royal Cádiz"
+        "undefined" : "A 196"
       },
       "labels" : {
         "IRI-based" : "hotel_10",
@@ -3824,21 +3824,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_3",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Málaga"
+        "undefined" : "A 175"
       },
       "labels" : {
         "IRI-based" : "hotel_3",
         "undefined" : "hotel_3"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_55",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An hotel located in  Cádiz"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_55",
-        "undefined" : "hotel_55"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_4",
@@ -3850,12 +3840,22 @@
         "IRI-based" : "hotel_4",
         "undefined" : "hotel_4"
       }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_55",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Vista Cádiz"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_55",
+        "undefined" : "hotel_55"
+      }
     } ],
     "comment" : {
       "en" : "A hotel designed for vacation stays."
     },
-    "id" : "3",
-    "superClasses" : [ "0" ]
+    "id" : "5",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#BeachHotel",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -3865,6 +3865,16 @@
       "en" : "BeachHotel"
     },
     "individuals" : [ {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_9",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_9",
+        "undefined" : "hotel_9"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_45",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -3885,34 +3895,24 @@
         "undefined" : "hotel_89"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_9",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_69",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 252"
+        "undefined" : "Hotel name:  Hotel Royal Madrid"
       },
       "labels" : {
-        "IRI-based" : "hotel_9",
-        "undefined" : "hotel_9"
+        "IRI-based" : "hotel_69",
+        "undefined" : "hotel_69"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_36",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Palace Zaragoza"
+        "undefined" : "A 298"
       },
       "labels" : {
         "IRI-based" : "hotel_36",
         "undefined" : "hotel_36"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_69",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 203"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_69",
-        "undefined" : "hotel_69"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_8",
@@ -3928,7 +3928,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_17",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Toledo"
+        "undefined" : "Hotel name:  Hotel Del Mar Toledo"
       },
       "labels" : {
         "IRI-based" : "hotel_17",
@@ -3948,7 +3948,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_19",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 290"
+        "undefined" : "Hotel name:  Hotel Sol Bilbao"
       },
       "labels" : {
         "IRI-based" : "hotel_19",
@@ -3958,7 +3958,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_1",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Sevilla"
+        "undefined" : "Hotel name:  Hotel Vista Sevilla"
       },
       "labels" : {
         "IRI-based" : "hotel_1",
@@ -3988,7 +3988,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_71",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Málaga"
+        "undefined" : "A 196"
       },
       "labels" : {
         "IRI-based" : "hotel_71",
@@ -3998,7 +3998,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_61",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 283"
+        "undefined" : "Hotel name:  Hotel Del Mar Cádiz"
       },
       "labels" : {
         "IRI-based" : "hotel_61",
@@ -4008,7 +4008,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_72",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Del Mar Zaragoza"
+        "undefined" : "A 170"
       },
       "labels" : {
         "IRI-based" : "hotel_72",
@@ -4028,21 +4028,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_41",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Royal Cádiz"
+        "undefined" : "An hotel located in  Cádiz"
       },
       "labels" : {
         "IRI-based" : "hotel_41",
         "undefined" : "hotel_41"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_86",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Hotel name:  Hotel Vista Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_86",
-        "undefined" : "hotel_86"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_53",
@@ -4055,14 +4045,14 @@
         "undefined" : "hotel_53"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_99",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_86",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 120"
+        "undefined" : "A 70"
       },
       "labels" : {
-        "IRI-based" : "hotel_99",
-        "undefined" : "hotel_99"
+        "IRI-based" : "hotel_86",
+        "undefined" : "hotel_86"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_88",
@@ -4075,10 +4065,20 @@
         "undefined" : "hotel_88"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_90",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_99",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "An hotel located in  Sevilla"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_99",
+        "undefined" : "hotel_99"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_90",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A 121"
       },
       "labels" : {
         "IRI-based" : "hotel_90",
@@ -4088,8 +4088,8 @@
     "comment" : {
       "en" : "A hotel located near the beach"
     },
-    "id" : "7",
-    "superClasses" : [ "0" ]
+    "id" : "9",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#LuxuryHotel",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -4102,7 +4102,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_56",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Cádiz"
+        "undefined" : "A 167"
       },
       "labels" : {
         "IRI-based" : "hotel_56",
@@ -4129,6 +4129,16 @@
         "undefined" : "hotel_57"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_28",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  San Sebastián"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_28",
+        "undefined" : "hotel_28"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_39",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4137,16 +4147,6 @@
       "labels" : {
         "IRI-based" : "hotel_39",
         "undefined" : "hotel_39"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_28",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Hotel name:  Hotel Del Mar San Sebastián"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_28",
-        "undefined" : "hotel_28"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_2",
@@ -4159,16 +4159,6 @@
         "undefined" : "hotel_2"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_74",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Hotel name:  Hotel Palace Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_74",
-        "undefined" : "hotel_74"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_5",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4179,10 +4169,20 @@
         "undefined" : "hotel_5"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_74",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A 58"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_74",
+        "undefined" : "hotel_74"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_42",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 227"
+        "undefined" : "Hotel name:  Hotel Palace Madrid"
       },
       "labels" : {
         "IRI-based" : "hotel_42",
@@ -4192,21 +4192,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_54",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 174"
+        "undefined" : "An hotel located in  Toledo"
       },
       "labels" : {
         "IRI-based" : "hotel_54",
         "undefined" : "hotel_54"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_21",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 291"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_21",
-        "undefined" : "hotel_21"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_65",
@@ -4217,6 +4207,16 @@
       "labels" : {
         "IRI-based" : "hotel_65",
         "undefined" : "hotel_65"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_21",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Sol Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_21",
+        "undefined" : "hotel_21"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_44",
@@ -4242,8 +4242,8 @@
     "comment" : {
       "en" : "A high-end hotel with premium services."
     },
-    "id" : "2",
-    "superClasses" : [ "0" ]
+    "id" : "4",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#Park",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -4264,7 +4264,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_63",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Museo Zaragoza"
+        "undefined" : "A touristic attraction in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "attraction_63",
@@ -4274,81 +4274,71 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_95",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Park"
+        "undefined" : "A touristic attraction named: Catedral Valencia"
       },
       "labels" : {
         "IRI-based" : "attraction_95",
         "undefined" : "attraction_95"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_21",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction named: Catedral Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_21",
-        "undefined" : "attraction_21"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_43",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Park"
+        "undefined" : "A touristic attraction named: Parque Barcelona"
       },
       "labels" : {
         "IRI-based" : "attraction_43",
         "undefined" : "attraction_43"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_21",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction in Málaga"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_21",
+        "undefined" : "attraction_21"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_42",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Museo Madrid"
+        "undefined" : "A Park"
       },
       "labels" : {
         "IRI-based" : "attraction_42",
         "undefined" : "attraction_42"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_12",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Park"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_12",
-        "undefined" : "attraction_12"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_23",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo San Sebastián"
+        "undefined" : "A Park"
       },
       "labels" : {
         "IRI-based" : "attraction_23",
         "undefined" : "attraction_23"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_12",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Catedral Cádiz"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_12",
+        "undefined" : "attraction_12"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_69",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Park"
+        "undefined" : "A touristic attraction in Cádiz"
       },
       "labels" : {
         "IRI-based" : "attraction_69",
         "undefined" : "attraction_69"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_57",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Park"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_57",
-        "undefined" : "attraction_57"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_24",
@@ -4361,10 +4351,20 @@
         "undefined" : "attraction_24"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_57",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Parque Cádiz"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_57",
+        "undefined" : "attraction_57"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_38",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Toledo"
+        "undefined" : "A touristic attraction named: Palacio Toledo"
       },
       "labels" : {
         "IRI-based" : "attraction_38",
@@ -4384,7 +4384,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_48",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Parque San Sebastián"
+        "undefined" : "A Park"
       },
       "labels" : {
         "IRI-based" : "attraction_48",
@@ -4404,7 +4404,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_39",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in San Sebastián"
+        "undefined" : "A Park"
       },
       "labels" : {
         "IRI-based" : "attraction_39",
@@ -4424,7 +4424,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_80",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Madrid"
+        "undefined" : "A touristic attraction named: Parque Madrid"
       },
       "labels" : {
         "IRI-based" : "attraction_80",
@@ -4434,31 +4434,31 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_61",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Park"
+        "undefined" : "A touristic attraction in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "attraction_61",
         "undefined" : "attraction_61"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_82",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Park"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_82",
-        "undefined" : "attraction_82"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_100",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Bilbao"
+        "undefined" : "A touristic attraction named: Museo Bilbao"
       },
       "labels" : {
         "IRI-based" : "attraction_100",
         "undefined" : "attraction_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_82",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Palacio Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_82",
+        "undefined" : "attraction_82"
       }
     } ],
     "comment" : {
@@ -4519,6 +4519,26 @@
       "en" : "Monument"
     },
     "individuals" : [ {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_85",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Castillo Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_85",
+        "undefined" : "attraction_85"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_74",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Palacio Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_74",
+        "undefined" : "attraction_74"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_41",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4529,30 +4549,10 @@
         "undefined" : "attraction_41"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_85",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Monument"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_85",
-        "undefined" : "attraction_85"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_74",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction in Madrid"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_74",
-        "undefined" : "attraction_74"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_62",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction in Valencia"
+        "undefined" : "A Monument"
       },
       "labels" : {
         "IRI-based" : "attraction_62",
@@ -4569,10 +4569,20 @@
         "undefined" : "attraction_73"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_87",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A touristic attraction named: Parque San Sebastián"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_87",
+        "undefined" : "attraction_87"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_32",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Museo Zaragoza"
+        "undefined" : "A Monument"
       },
       "labels" : {
         "IRI-based" : "attraction_32",
@@ -4589,14 +4599,14 @@
         "undefined" : "attraction_10"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_87",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_22",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Monument"
+        "undefined" : "A touristic attraction named: Catedral Valencia"
       },
       "labels" : {
-        "IRI-based" : "attraction_87",
-        "undefined" : "attraction_87"
+        "IRI-based" : "attraction_22",
+        "undefined" : "attraction_22"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_11",
@@ -4609,14 +4619,14 @@
         "undefined" : "attraction_11"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_22",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_36",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Catedral Valencia"
+        "undefined" : "A touristic attraction in Pamplona"
       },
       "labels" : {
-        "IRI-based" : "attraction_22",
-        "undefined" : "attraction_22"
+        "IRI-based" : "attraction_36",
+        "undefined" : "attraction_36"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_47",
@@ -4629,40 +4639,30 @@
         "undefined" : "attraction_47"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_36",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A Monument"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_36",
-        "undefined" : "attraction_36"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_68",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A touristic attraction in Madrid"
-      },
-      "labels" : {
-        "IRI-based" : "attraction_68",
-        "undefined" : "attraction_68"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_46",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Monument"
+        "undefined" : "A touristic attraction named: Museo Toledo"
       },
       "labels" : {
         "IRI-based" : "attraction_46",
         "undefined" : "attraction_46"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_68",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A Monument"
+      },
+      "labels" : {
+        "IRI-based" : "attraction_68",
+        "undefined" : "attraction_68"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_15",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A touristic attraction named: Castillo Cádiz"
+        "undefined" : "A touristic attraction in Cádiz"
       },
       "labels" : {
         "IRI-based" : "attraction_15",
@@ -4672,7 +4672,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_2",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Monument"
+        "undefined" : "A touristic attraction in Sevilla"
       },
       "labels" : {
         "IRI-based" : "attraction_2",
@@ -4682,7 +4682,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#attraction_9",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A Monument"
+        "undefined" : "A touristic attraction in Pamplona"
       },
       "labels" : {
         "IRI-based" : "attraction_9",
@@ -4713,6 +4713,16 @@
         "undefined" : "transport_39"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_14",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "transport_14",
+        "undefined" : "transport_14"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_25",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4731,16 +4741,6 @@
       "labels" : {
         "IRI-based" : "transport_47",
         "undefined" : "transport_47"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_14",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "transport_14",
-        "undefined" : "transport_14"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_35",
@@ -4763,16 +4763,6 @@
         "undefined" : "transport_46"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_56",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "transport_56",
-        "undefined" : "transport_56"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_67",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4781,6 +4771,16 @@
       "labels" : {
         "IRI-based" : "transport_67",
         "undefined" : "transport_67"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_56",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "transport_56",
+        "undefined" : "transport_56"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_99",
@@ -4813,14 +4813,14 @@
         "undefined" : "transport_76"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_64",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_20",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Barcelona"
+        "undefined" : "A public transport in Bilbao"
       },
       "labels" : {
-        "IRI-based" : "transport_64",
-        "undefined" : "transport_64"
+        "IRI-based" : "transport_20",
+        "undefined" : "transport_20"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_86",
@@ -4833,16 +4833,6 @@
         "undefined" : "transport_86"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_20",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Bilbao"
-      },
-      "labels" : {
-        "IRI-based" : "transport_20",
-        "undefined" : "transport_20"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_31",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4851,6 +4841,16 @@
       "labels" : {
         "IRI-based" : "transport_31",
         "undefined" : "transport_31"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_64",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "transport_64",
+        "undefined" : "transport_64"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_30",
@@ -4873,6 +4873,16 @@
         "undefined" : "transport_2"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_63",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Málaga"
+      },
+      "labels" : {
+        "IRI-based" : "transport_63",
+        "undefined" : "transport_63"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_41",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4893,16 +4903,6 @@
         "undefined" : "transport_52"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_63",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "transport_63",
-        "undefined" : "transport_63"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_72",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4913,16 +4913,6 @@
         "undefined" : "transport_72"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_91",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Bilbao"
-      },
-      "labels" : {
-        "IRI-based" : "transport_91",
-        "undefined" : "transport_91"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_7",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4931,6 +4921,16 @@
       "labels" : {
         "IRI-based" : "transport_7",
         "undefined" : "transport_7"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_91",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in Bilbao"
+      },
+      "labels" : {
+        "IRI-based" : "transport_91",
+        "undefined" : "transport_91"
       }
     } ],
     "comment" : {
@@ -4947,16 +4947,6 @@
       "en" : "Tram"
     },
     "individuals" : [ {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_38",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A public transport in Madrid"
-      },
-      "labels" : {
-        "IRI-based" : "transport_38",
-        "undefined" : "transport_38"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_16",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -4967,14 +4957,14 @@
         "undefined" : "transport_16"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_59",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_38",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in San Sebastián"
+        "undefined" : "A public transport in Madrid"
       },
       "labels" : {
-        "IRI-based" : "transport_59",
-        "undefined" : "transport_59"
+        "IRI-based" : "transport_38",
+        "undefined" : "transport_38"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_15",
@@ -4985,6 +4975,16 @@
       "labels" : {
         "IRI-based" : "transport_15",
         "undefined" : "transport_15"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_59",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A public transport in San Sebastián"
+      },
+      "labels" : {
+        "IRI-based" : "transport_59",
+        "undefined" : "transport_59"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_79",
@@ -5007,14 +5007,14 @@
         "undefined" : "transport_78"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_11",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_77",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Valencia"
+        "undefined" : "A public transport in Madrid"
       },
       "labels" : {
-        "IRI-based" : "transport_11",
-        "undefined" : "transport_11"
+        "IRI-based" : "transport_77",
+        "undefined" : "transport_77"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_55",
@@ -5027,14 +5027,14 @@
         "undefined" : "transport_55"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_77",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_11",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A public transport in Madrid"
+        "undefined" : "A public transport in Valencia"
       },
       "labels" : {
-        "IRI-based" : "transport_77",
-        "undefined" : "transport_77"
+        "IRI-based" : "transport_11",
+        "undefined" : "transport_11"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#transport_98",
@@ -5237,7 +5237,7 @@
       "IRI-based" : "Restaurant",
       "en" : "Restaurant"
     },
-    "subClasses" : [ "21", "62", "97", "32", "83", "88", "92" ],
+    "subClasses" : [ "21", "62", "92", "32", "85", "83", "77" ],
     "comment" : {
       "en" : "A place where meals are served."
     },
@@ -5260,7 +5260,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "80",
+    "id" : "81",
     "label" : {
       "IRI-based" : "string"
     }
@@ -5286,7 +5286,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_86",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A TechnologicalEvent"
+        "undefined" : "An event named Feria Toledo"
       },
       "labels" : {
         "IRI-based" : "event_86",
@@ -5296,7 +5296,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_11",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A TechnologicalEvent"
+        "undefined" : "An event in Bilbao"
       },
       "labels" : {
         "IRI-based" : "event_11",
@@ -5316,7 +5316,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_13",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A TechnologicalEvent"
+        "undefined" : "An event named Congreso Valencia"
       },
       "labels" : {
         "IRI-based" : "event_13",
@@ -5326,21 +5326,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_59",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Málaga"
+        "undefined" : "A TechnologicalEvent"
       },
       "labels" : {
         "IRI-based" : "event_59",
         "undefined" : "event_59"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_25",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Carnaval Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "event_25",
-        "undefined" : "event_25"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_58",
@@ -5351,6 +5341,16 @@
       "labels" : {
         "IRI-based" : "event_58",
         "undefined" : "event_58"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_25",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event in Málaga"
+      },
+      "labels" : {
+        "IRI-based" : "event_25",
+        "undefined" : "event_25"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_28",
@@ -5366,7 +5366,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_16",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A TechnologicalEvent"
+        "undefined" : "An event in Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_16",
@@ -5388,7 +5388,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "9",
+    "id" : "2",
     "label" : {
       "IRI-based" : "float"
     }
@@ -5430,7 +5430,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_67",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Madrid"
+        "undefined" : "A 71"
       },
       "labels" : {
         "IRI-based" : "hotel_67",
@@ -5440,7 +5440,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_78",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Royal Bilbao"
+        "undefined" : "An hotel located in  Bilbao"
       },
       "labels" : {
         "IRI-based" : "hotel_78",
@@ -5450,7 +5450,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_59",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 99"
+        "undefined" : "An hotel located in  San Sebastián"
       },
       "labels" : {
         "IRI-based" : "hotel_59",
@@ -5480,7 +5480,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_38",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Hotel name:  Hotel Del Mar Málaga"
+        "undefined" : "A 196"
       },
       "labels" : {
         "IRI-based" : "hotel_38",
@@ -5510,31 +5510,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_73",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  San Sebastián"
+        "undefined" : "A 227"
       },
       "labels" : {
         "IRI-based" : "hotel_73",
         "undefined" : "hotel_73"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_84",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 150"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_84",
-        "undefined" : "hotel_84"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_40",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 270"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_40",
-        "undefined" : "hotel_40"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_62",
@@ -5547,44 +5527,64 @@
         "undefined" : "hotel_62"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_96",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_40",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Pamplona"
+        "undefined" : "Hotel name:  Hotel Del Mar San Sebastián"
       },
       "labels" : {
-        "IRI-based" : "hotel_96",
-        "undefined" : "hotel_96"
+        "IRI-based" : "hotel_40",
+        "undefined" : "hotel_40"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_84",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_84",
+        "undefined" : "hotel_84"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_85",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Madrid"
+        "undefined" : "A 65"
       },
       "labels" : {
         "IRI-based" : "hotel_85",
         "undefined" : "hotel_85"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_96",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A 109"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_96",
+        "undefined" : "hotel_96"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_75",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 67"
+        "undefined" : "Hotel name:  Hotel Royal Madrid"
       },
       "labels" : {
         "IRI-based" : "hotel_75",
         "undefined" : "hotel_75"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_32",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_76",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Toledo"
+        "undefined" : "Hotel name:  Hotel Vista Barcelona"
       },
       "labels" : {
-        "IRI-based" : "hotel_32",
-        "undefined" : "hotel_32"
+        "IRI-based" : "hotel_76",
+        "undefined" : "hotel_76"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_43",
@@ -5600,27 +5600,27 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_98",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 284"
+        "undefined" : "An hotel located in  Madrid"
       },
       "labels" : {
         "IRI-based" : "hotel_98",
         "undefined" : "hotel_98"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_76",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_32",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Barcelona"
+        "undefined" : "An hotel located in  Toledo"
       },
       "labels" : {
-        "IRI-based" : "hotel_76",
-        "undefined" : "hotel_76"
+        "IRI-based" : "hotel_32",
+        "undefined" : "hotel_32"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_33",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Barcelona"
+        "undefined" : "Hotel name:  Hotel Sol Barcelona"
       },
       "labels" : {
         "IRI-based" : "hotel_33",
@@ -5630,7 +5630,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_100",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 198"
+        "undefined" : "Hotel name:  Hotel Palace Málaga"
       },
       "labels" : {
         "IRI-based" : "hotel_100",
@@ -5640,8 +5640,8 @@
     "comment" : {
       "en" : "A hotel located in countryside areas."
     },
-    "id" : "5",
-    "superClasses" : [ "0" ]
+    "id" : "7",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#MusicEvent",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -5654,7 +5654,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_80",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Concierto Málaga"
+        "undefined" : "A MusicEvent"
       },
       "labels" : {
         "IRI-based" : "event_80",
@@ -5664,11 +5664,21 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_82",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A MusicEvent"
+        "undefined" : "An event in Toledo"
       },
       "labels" : {
         "IRI-based" : "event_82",
         "undefined" : "event_82"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_84",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A MusicEvent"
+      },
+      "labels" : {
+        "IRI-based" : "event_84",
+        "undefined" : "event_84"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_40",
@@ -5681,20 +5691,10 @@
         "undefined" : "event_40"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_84",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Festival Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "event_84",
-        "undefined" : "event_84"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_72",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Feria Cádiz"
+        "undefined" : "An event in Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_72",
@@ -5724,31 +5724,31 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_97",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Bilbao"
+        "undefined" : "An event named Carnaval Bilbao"
       },
       "labels" : {
         "IRI-based" : "event_97",
         "undefined" : "event_97"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_74",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_30",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Málaga"
+        "undefined" : "An event named Festival Madrid"
       },
       "labels" : {
-        "IRI-based" : "event_74",
-        "undefined" : "event_74"
+        "IRI-based" : "event_30",
+        "undefined" : "event_30"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_30",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_74",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
         "undefined" : "A MusicEvent"
       },
       "labels" : {
-        "IRI-based" : "event_30",
-        "undefined" : "event_30"
+        "IRI-based" : "event_74",
+        "undefined" : "event_74"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_9",
@@ -5764,37 +5764,37 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_19",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A MusicEvent"
+        "undefined" : "An event named Concierto Valencia"
       },
       "labels" : {
         "IRI-based" : "event_19",
         "undefined" : "event_19"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_18",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event in Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "event_18",
-        "undefined" : "event_18"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_4",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A MusicEvent"
+        "undefined" : "An event in Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_4",
         "undefined" : "event_4"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_18",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A MusicEvent"
+      },
+      "labels" : {
+        "IRI-based" : "event_18",
+        "undefined" : "event_18"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_8",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Feria Málaga"
+        "undefined" : "A MusicEvent"
       },
       "labels" : {
         "IRI-based" : "event_8",
@@ -5811,24 +5811,24 @@
         "undefined" : "event_6"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_77",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event in Toledo"
-      },
-      "labels" : {
-        "IRI-based" : "event_77",
-        "undefined" : "event_77"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_88",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A MusicEvent"
+        "undefined" : "An event named Festival Toledo"
       },
       "labels" : {
         "IRI-based" : "event_88",
         "undefined" : "event_88"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_77",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event named Festival Toledo"
+      },
+      "labels" : {
+        "IRI-based" : "event_77",
+        "undefined" : "event_77"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_76",
@@ -5841,24 +5841,24 @@
         "undefined" : "event_76"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_46",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event named Congreso Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "event_46",
-        "undefined" : "event_46"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_79",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Cádiz"
+        "undefined" : "A MusicEvent"
       },
       "labels" : {
         "IRI-based" : "event_79",
         "undefined" : "event_79"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_46",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event in Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "event_46",
+        "undefined" : "event_46"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_67",
@@ -5884,7 +5884,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_17",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Carnaval Valencia"
+        "undefined" : "An event in Valencia"
       },
       "labels" : {
         "IRI-based" : "event_17",
@@ -5908,7 +5908,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_81",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event in Toledo"
       },
       "labels" : {
         "IRI-based" : "event_81",
@@ -5918,27 +5918,17 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_62",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event in Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_62",
         "undefined" : "event_62"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_50",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An event in Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "event_50",
-        "undefined" : "event_50"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_83",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event in Cádiz"
       },
       "labels" : {
         "IRI-based" : "event_83",
@@ -5948,17 +5938,27 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_61",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event in Toledo"
       },
       "labels" : {
         "IRI-based" : "event_61",
         "undefined" : "event_61"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_50",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An event named Festival Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "event_50",
+        "undefined" : "event_50"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_63",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Málaga"
+        "undefined" : "A GastronomicalEvent"
       },
       "labels" : {
         "IRI-based" : "event_63",
@@ -5968,7 +5968,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_41",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Toledo"
+        "undefined" : "An event named Concierto Toledo"
       },
       "labels" : {
         "IRI-based" : "event_41",
@@ -5978,7 +5978,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_99",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event named Feria Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_99",
@@ -5988,7 +5988,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_44",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Congreso Sevilla"
+        "undefined" : "An event in Sevilla"
       },
       "labels" : {
         "IRI-based" : "event_44",
@@ -5998,7 +5998,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_10",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event named Congreso Barcelona"
       },
       "labels" : {
         "IRI-based" : "event_10",
@@ -6008,7 +6008,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_54",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event named Feria Pamplona"
+        "undefined" : "An event in Pamplona"
       },
       "labels" : {
         "IRI-based" : "event_54",
@@ -6028,7 +6028,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_35",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Toledo"
+        "undefined" : "An event named Concierto Toledo"
       },
       "labels" : {
         "IRI-based" : "event_35",
@@ -6038,7 +6038,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_34",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A GastronomicalEvent"
+        "undefined" : "An event in Zaragoza"
       },
       "labels" : {
         "IRI-based" : "event_34",
@@ -6048,21 +6048,11 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_89",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in Zaragoza"
+        "undefined" : "A GastronomicalEvent"
       },
       "labels" : {
         "IRI-based" : "event_89",
         "undefined" : "event_89"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_37",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A GastronomicalEvent"
-      },
-      "labels" : {
-        "IRI-based" : "event_37",
-        "undefined" : "event_37"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_15",
@@ -6073,6 +6063,16 @@
       "labels" : {
         "IRI-based" : "event_15",
         "undefined" : "event_15"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_37",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A GastronomicalEvent"
+      },
+      "labels" : {
+        "IRI-based" : "event_37",
+        "undefined" : "event_37"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_69",
@@ -6088,7 +6088,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#event_49",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An event in San Sebastián"
+        "undefined" : "An event named Concierto San Sebastián"
       },
       "labels" : {
         "IRI-based" : "event_49",
@@ -6113,7 +6113,7 @@
       "undefined" : "A restaurant with a high rating.\nHas a rating greater or equal to 4.9"
     },
     "attributes" : [ "intersection" ],
-    "id" : "88",
+    "id" : "83",
     "superClasses" : [ "20" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#BudgetRestaurant",
@@ -6128,7 +6128,7 @@
       "undefined" : "A budget restaurant. It has an average price under 30€."
     },
     "attributes" : [ "intersection" ],
-    "id" : "97",
+    "id" : "92",
     "superClasses" : [ "20" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#BusinessHotel",
@@ -6139,44 +6139,44 @@
       "en" : "BusinessHotel"
     },
     "individuals" : [ {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_79",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Hotel name:  Hotel Sol Málaga"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_79",
-        "undefined" : "hotel_79"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_24",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 150"
+        "undefined" : "An hotel located in  Zaragoza"
       },
       "labels" : {
         "IRI-based" : "hotel_24",
         "undefined" : "hotel_24"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_58",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_79",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Sevilla"
+        "undefined" : "An hotel located in  Málaga"
       },
       "labels" : {
-        "IRI-based" : "hotel_58",
-        "undefined" : "hotel_58"
+        "IRI-based" : "hotel_79",
+        "undefined" : "hotel_79"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_14",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 91"
+        "undefined" : "An hotel located in  Madrid"
       },
       "labels" : {
         "IRI-based" : "hotel_14",
         "undefined" : "hotel_14"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_58",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "A 208"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_58",
+        "undefined" : "hotel_58"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_15",
@@ -6189,16 +6189,6 @@
         "undefined" : "hotel_15"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_16",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An hotel located in  Zaragoza"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_16",
-        "undefined" : "hotel_16"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_27",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -6207,6 +6197,26 @@
       "labels" : {
         "IRI-based" : "hotel_27",
         "undefined" : "hotel_27"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_16",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Hotel name:  Hotel Palace Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_16",
+        "undefined" : "hotel_16"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_50",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Cádiz"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_50",
+        "undefined" : "hotel_50"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_94",
@@ -6219,34 +6229,34 @@
         "undefined" : "hotel_94"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_50",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_52",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 260"
+        "undefined" : "Hotel name:  Hotel Sol Sevilla"
       },
       "labels" : {
-        "IRI-based" : "hotel_50",
-        "undefined" : "hotel_50"
+        "IRI-based" : "hotel_52",
+        "undefined" : "hotel_52"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_30",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  Pamplona"
+        "undefined" : "Hotel name:  Hotel Del Mar Pamplona"
       },
       "labels" : {
         "IRI-based" : "hotel_30",
         "undefined" : "hotel_30"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_52",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_6",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 146"
+        "undefined" : "An hotel located in  San Sebastián"
       },
       "labels" : {
-        "IRI-based" : "hotel_52",
-        "undefined" : "hotel_52"
+        "IRI-based" : "hotel_6",
+        "undefined" : "hotel_6"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_97",
@@ -6259,20 +6269,10 @@
         "undefined" : "hotel_97"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_6",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Hotel name:  Hotel Royal San Sebastián"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_6",
-        "undefined" : "hotel_6"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_64",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 251"
+        "undefined" : "Hotel name:  Hotel Palace Barcelona"
       },
       "labels" : {
         "IRI-based" : "hotel_64",
@@ -6282,11 +6282,21 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_87",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "An hotel located in  San Sebastián"
+        "undefined" : "A 75"
       },
       "labels" : {
         "IRI-based" : "hotel_87",
         "undefined" : "hotel_87"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_11",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_11",
+        "undefined" : "hotel_11"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_66",
@@ -6299,34 +6309,14 @@
         "undefined" : "hotel_66"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_11",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A 146"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_11",
-        "undefined" : "hotel_11"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_22",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A 238"
+        "undefined" : "An hotel located in  Málaga"
       },
       "labels" : {
         "IRI-based" : "hotel_22",
         "undefined" : "hotel_22"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_91",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "An hotel located in  Valencia"
-      },
-      "labels" : {
-        "IRI-based" : "hotel_91",
-        "undefined" : "hotel_91"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_80",
@@ -6338,12 +6328,22 @@
         "IRI-based" : "hotel_80",
         "undefined" : "hotel_80"
       }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hotel_91",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "An hotel located in  Valencia"
+      },
+      "labels" : {
+        "IRI-based" : "hotel_91",
+        "undefined" : "hotel_91"
+      }
     } ],
     "comment" : {
       "en" : "A hotel focused on business travelers."
     },
-    "id" : "4",
-    "superClasses" : [ "0" ]
+    "id" : "6",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#JapaneseRestaurant",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
@@ -6356,7 +6356,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_25",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
+        "undefined" : "Restaurante Fusión Sevilla"
       },
       "labels" : {
         "IRI-based" : "restaurant_25",
@@ -6373,40 +6373,40 @@
         "undefined" : "restaurant_58"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_35",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_35",
-        "undefined" : "restaurant_35"
-      }
-    }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_13",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_13",
-        "undefined" : "restaurant_13"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_68",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Gourmet Barcelona"
+        "undefined" : "Type of cuisine:Japanese"
       },
       "labels" : {
         "IRI-based" : "restaurant_68",
         "undefined" : "restaurant_68"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_13",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Delicia Zaragoza"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_13",
+        "undefined" : "restaurant_13"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_35",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Delicia San Sebastián"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_35",
+        "undefined" : "restaurant_35"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_27",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición San Sebastián"
+        "undefined" : "A restaurant in San Sebastián"
       },
       "labels" : {
         "IRI-based" : "restaurant_27",
@@ -6416,7 +6416,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_15",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Delicia Zaragoza"
+        "undefined" : "Type of cuisine:Japanese"
       },
       "labels" : {
         "IRI-based" : "restaurant_15",
@@ -6436,7 +6436,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_9",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Málaga"
+        "undefined" : "Type of cuisine:Japanese"
       },
       "labels" : {
         "IRI-based" : "restaurant_9",
@@ -6446,7 +6446,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_4",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
+        "undefined" : "A restaurant in Málaga"
       },
       "labels" : {
         "IRI-based" : "restaurant_4",
@@ -6463,16 +6463,6 @@
         "undefined" : "restaurant_90"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_92",
-      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-      "comment" : {
-        "undefined" : "A restaurant in Pamplona"
-      },
-      "labels" : {
-        "IRI-based" : "restaurant_92",
-        "undefined" : "restaurant_92"
-      }
-    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_2",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
@@ -6483,10 +6473,20 @@
         "undefined" : "restaurant_2"
       }
     }, {
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_92",
+      "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
+      "comment" : {
+        "undefined" : "Restaurante Gourmet Pamplona"
+      },
+      "labels" : {
+        "IRI-based" : "restaurant_92",
+        "undefined" : "restaurant_92"
+      }
+    }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_96",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Madrid"
+        "undefined" : "Restaurante Tradición Madrid"
       },
       "labels" : {
         "IRI-based" : "restaurant_96",
@@ -6506,7 +6506,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_65",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
+        "undefined" : "Restaurante Gourmet Málaga"
       },
       "labels" : {
         "IRI-based" : "restaurant_65",
@@ -6526,7 +6526,7 @@
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_20",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "A restaurant in Málaga"
+        "undefined" : "Type of cuisine:Japanese"
       },
       "labels" : {
         "IRI-based" : "restaurant_20",
@@ -6553,14 +6553,14 @@
         "undefined" : "restaurant_89"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_22",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_44",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Restaurante Tradición Madrid"
+        "undefined" : "A restaurant in Málaga"
       },
       "labels" : {
-        "IRI-based" : "restaurant_22",
-        "undefined" : "restaurant_22"
+        "IRI-based" : "restaurant_44",
+        "undefined" : "restaurant_44"
       }
     }, {
       "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_33",
@@ -6573,24 +6573,24 @@
         "undefined" : "restaurant_33"
       }
     }, {
-      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_44",
+      "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#restaurant_22",
       "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
       "comment" : {
-        "undefined" : "Type of cuisine:Japanese"
+        "undefined" : "A restaurant in Madrid"
       },
       "labels" : {
-        "IRI-based" : "restaurant_44",
-        "undefined" : "restaurant_44"
+        "IRI-based" : "restaurant_22",
+        "undefined" : "restaurant_22"
       }
     } ],
     "comment" : {
       "en" : "A restaurant offering Japanese cuisine"
     },
-    "id" : "92",
+    "id" : "77",
     "superClasses" : [ "20" ]
   } ],
   "property" : [ {
-    "id" : "8",
+    "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "11",
@@ -6674,35 +6674,32 @@
     "id" : "76",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "77",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "81",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "28",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "84",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "85",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "86",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "87",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "89",
     "type" : "rdfs:SubClassOf"
@@ -6723,6 +6720,9 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "29",
@@ -6755,7 +6755,7 @@
   "propertyAttribute" : [ {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hasPricePerNight",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-    "range" : "9",
+    "range" : "2",
     "label" : {
       "IRI-based" : "hasPricePerNight",
       "en" : "Has price per night"
@@ -6765,10 +6765,10 @@
       "en" : "The price for every night"
     },
     "attributes" : [ "datatype" ],
-    "id" : "8"
+    "id" : "0"
   }, {
     "range" : "1",
-    "domain" : "0",
+    "domain" : "3",
     "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
@@ -6779,7 +6779,7 @@
       "IRI-based" : "hasPricePerNightDollars",
       "undefined" : "Has price per night in USD"
     },
-    "domain" : "0",
+    "domain" : "3",
     "comment" : {
       "undefined" : "The price for a night in USD"
     },
@@ -6834,7 +6834,7 @@
     "comment" : {
       "en" : "Connects a place or business with the city where it is."
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "30"
   }, {
     "range" : "13",
@@ -6842,13 +6842,13 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
-    "range" : "0",
-    "domain" : "7",
+    "range" : "3",
+    "domain" : "9",
     "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
-    "range" : "0",
-    "domain" : "6",
+    "range" : "3",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "43"
   }, {
@@ -6862,23 +6862,23 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "46"
   }, {
-    "range" : "0",
-    "domain" : "4",
+    "range" : "3",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
-    "range" : "0",
-    "domain" : "3",
+    "range" : "3",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
     "id" : "49"
   }, {
-    "range" : "0",
-    "domain" : "5",
+    "range" : "3",
+    "domain" : "7",
     "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
-    "range" : "0",
-    "domain" : "2",
+    "range" : "3",
+    "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
@@ -6931,24 +6931,24 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "75"
   }, {
-    "range" : "45",
-    "domain" : "57",
+    "range" : "20",
+    "domain" : "77",
     "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "15",
     "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "77"
+    "id" : "78"
   }, {
     "range" : "15",
     "domain" : "66",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
+    "id" : "79"
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#hasLocation",
     "baseIri" : "https://purl.archive.org/purl/psvazquez/itandrec",
-    "range" : "80",
+    "range" : "81",
     "label" : {
       "IRI-based" : "hasLocation",
       "en" : "Has location"
@@ -6958,17 +6958,17 @@
       "en" : "The place where something is."
     },
     "attributes" : [ "datatype" ],
-    "id" : "79"
+    "id" : "80"
   }, {
-    "range" : "45",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
-  }, {
-    "range" : "45",
-    "domain" : "65",
+    "range" : "20",
+    "domain" : "83",
     "attributes" : [ "anonymous", "object" ],
     "id" : "82"
+  }, {
+    "range" : "20",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#operatedBy",
     "inverse" : "31",
@@ -6998,12 +6998,12 @@
       "undefined" : "Has rating for a Restaurant"
     },
     "attributes" : [ "datatype" ],
-    "id" : "84"
+    "id" : "86"
   }, {
-    "range" : "45",
-    "domain" : "64",
+    "range" : "20",
+    "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "85"
+    "id" : "87"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
@@ -7013,20 +7013,15 @@
     },
     "domain" : "27",
     "attributes" : [ "external", "datatype" ],
-    "id" : "86"
+    "id" : "88"
   }, {
     "range" : "20",
-    "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "87"
-  }, {
-    "range" : "20",
-    "domain" : "83",
+    "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
     "id" : "89"
   }, {
     "range" : "45",
-    "domain" : "47",
+    "domain" : "57",
     "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
@@ -7040,20 +7035,25 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
-    "range" : "20",
-    "domain" : "21",
+    "range" : "45",
+    "domain" : "64",
     "attributes" : [ "anonymous", "object" ],
     "id" : "94"
   }, {
-    "range" : "20",
-    "domain" : "32",
+    "range" : "45",
+    "domain" : "47",
     "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
-    "range" : "20",
-    "domain" : "97",
+    "range" : "45",
+    "domain" : "54",
     "attributes" : [ "anonymous", "object" ],
     "id" : "96"
+  }, {
+    "range" : "45",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
   }, {
     "iri" : "https://purl.archive.org/purl/psvazquez/itandrec#isLocationOf",
     "inverse" : "30",
@@ -7134,7 +7134,7 @@
       "IRI-based" : "hasStars",
       "undefined" : "Has stars"
     },
-    "domain" : "0",
+    "domain" : "3",
     "comment" : {
       "en" : "The number of stars a hotel has. Defines the quality of the hotel"
     },
@@ -7153,7 +7153,7 @@
       "IRI-based" : "hasHotelRating",
       "undefined" : "Hotel Rating"
     },
-    "domain" : "0",
+    "domain" : "3",
     "comment" : {
       "undefined" : "Has rating for a Hotel"
     },
