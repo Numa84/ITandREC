@@ -1,0 +1,107 @@
+
+abstract=The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.
+It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. 
+Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.
+It enables interoperability, data integration, and querying within tourism information systems.
+
+
+ontologyTitle=IntelligentTourismAndRecommendations
+ontologyPrefix=[itandrec]
+ontologyNamespaceURI=https://purl.archive.org/purl/psvazquez/itandrec
+ontologyName=[itandrec]
+thisVersionURI=https://purl.archive.org/purl/psvazquez/itandrec
+latestVersionURI=https://purl.archive.org/purl/psvazquez/itandrec
+previousVersionURI=https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology1.7.owl
+dateCreated=4-12-2025
+dateModified=24-12-2025
+ontologyRevisionNumber=This is V1.8
+licenseURI=null
+licenseName=null
+licenseIconURL=null
+citeAs= Revision: This is V1.8. Retrieved from: https://purl.archive.org/purl/psvazquez/itandrec
+DOI=
+status=Ontology Specification Draft
+logo=
+description=The Intelligent Tourism and Recommendations ontology provides a detailed semantic representation of the tourism domain, with a focus on intelligent data processing and personalized recommendations. 
+It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to enable inference and reasoning.
+
+Core Concepts
+Hotel: 
+Represents general lodging businesses. It is a superclass for more specific types such as RuralHotel. 
+Each hotel is described using properties such as hasName, hasStarRating, and hasLocation.
+
+Restaurant: 
+Represents food establishments. 
+Restaurants are modeled with attributes like hasAveragePrice, hasCuisineType, and locatedIn, enabling filtering and recommendation based on customer budget and tastes.
+
+TouristAttraction: 
+Captures points of interest such as monuments, museums, or natural parks. 
+These are usually the main reasons to visit a particular city.
+
+Properties
+Object Properties: Define relationships between instances of different classes. Examples include:
+
+locatedIn – connects a hotel or restaurant to a Location
+
+operatedBy - connects a public transport service to the company that operates it.
+
+Data Properties: Define literal attributes. Examples include:
+
+hasName – assigns a name to a hotel, restaurant, or location
+
+hasAveragePrice – expresses cost information, for filtering options based on budget
+
+hasRating – allows representation of user ratings on a 0 to 5 scale.
+
+Individuals
+The ontology contains a rich set of individuals (named instances) that represent actual or example entities such as hotel_97, restaurant_38, and specific City instances. 
+These individuals are populated with data that allows reasoning engines to simulate recommendations or answer semantic queries.
+
+Rules and Inference
+Using SWRL (Semantic Web Rule Language), the ontology supports rule-based reasoning to infer new facts. 
+Inside Protegé (The software used to develop the ontology) the reasoner used was Pellet.
+
+Extensibility
+The ontology is designed to be extensible and adaptable. 
+New classes, properties, and individuals can be incorporated as the need arises.
+
+introduction=In recent years, the tourism industry has experienced growing availability of digital information and an increase in the demand for personalized experiences. 
+Tourists today seek tailored recommendations that align with their preferences, budgets, and travel purposes. 
+
+Semantic technologies and knowledge representation techniques offer powerful tools to enhance information systems.
+
+The Intelligent Tourism and Recommendations ontology has been developed to address this needs. 
+It is a machine-understandable model of the tourism domain in Spain. 
+This ontology defines the core concepts related to tourism—such as hotels, restaurants, types of lodging, pricing, etc.
+It supports the semantic integration of data from diferent sources and enables advanced reasoning capabilities through 
+the use of OWL (Web Ontology Language) and SWRL (Semantic Web Rule Language).
+
+Designed to serve for intelligent recommendation systems, the ontology aims to support the development of applications
+that can guide users when planning their trips.
+
+backwardsCompatibleWith=https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology1.7.owl
+publisher=UOC
+publisherURI=https://www.uoc.edu/es
+publisherInstitution=
+publisherInstitutionURI=https://www.uoc.edu/es
+authors=Pedro Sánchez;Gaizka Madjenic;Francesc Martinez
+authorsURI=https://orcid.org/0009-0005-9692-3356;;
+authorsInstitution=UOC;UOC;UOC
+authorsInstitutionURI=https://www.uoc.edu/;https://www.uoc.edu/;https://www.uoc.edu/
+contributors=Francesc Martinez;Gaizka Madjenic;Pedro Sanchez
+contributorsURI=;;
+contributorsInstitution=UOC;UOC;
+contributorsInstitutionURI=https://www.uoc.edu/es;https://www.uoc.edu/es;https://www.uoc.edu/es
+importedOntologyNames=https://www.w3.org/submissions/SWRL/swrl.rdf
+importedOntologyURIs=https://www.w3.org/submissions/SWRL/swrl.rdf
+extendedOntologyNames=
+extendedOntologyURIs=
+RDFXMLSerialization=ontology.owl
+TurtleSerialization=ontology.ttl
+NTSerialization=ontology.nt
+JSONLDSerialization=ontology.jsonld
+images=
+source=
+seeAlso=https://github.com/Numa84/ITandREC
+fundingGrants=
+funders=
