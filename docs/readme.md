@@ -17,49 +17,7 @@
  <title>IntelligentTourismAndRecommendations</title>
 
 
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purl.archive.org/purl/psvazquez/itandrec","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purl.archive.org/purl/psvazquez/itandrec","name":"IntelligentTourismAndRecommendations", "headline":"The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.It enables interoperability, data integration, and querying within tourism information systems.", "dateReleased":"4-12-2025", "dateModified":"24-12-2025", "version":"This is V1.8", "codeRepository":"https://github.com/Numa84/ITandREC", "author":[{"@type":"Person","name":"Pedro Sánchez","url":"https://orcid.org/0009-0005-9692-3356"},{"@type":"Person","name":"Gaizka Madjenic"},{"@type":"Person","name":"Francesc Martinez"}], "contributor":[{"@type":"Person","name":"Francesc Martinez"},{"@type":"Person","name":"Gaizka Madjenic"},{"@type":"Person","name":"Pedro Sanchez"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
-function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
-}
-function loadTOC(){
-	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
-	  jQuery(".list").each(function(){
-		if(jQuery(this).is('h2')){
-			if(j>0){
-				t+='</ul>';
-				j=0;
-			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-			i++;
-		}
-		if(jQuery(this).is('h3')){
-			if(j==0){
-				t+='<ul>';
-			}
-			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-		}
-	  });
-	  t+='</ul>';
-	  $("#toc").html(t); 
-}
-$(function(){
-    loadHash();
-}); $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
   </head> 
 
 <body>
