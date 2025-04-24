@@ -11,11 +11,7 @@
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
 <meta name="color-scheme" content="dark light">
- <title>IntelligentTourismAndRecommendations</title>
-
-
-
-  </head> 
+</head> 
 
 <body>
 <div class="container">
