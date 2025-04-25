@@ -14,7 +14,12 @@
      xmlns:ontology="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl"/>
-        <dc:description>Description
+         <terms:abstract xml:lang="en">The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.
+It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. 
+Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.
+It enables interoperability, data integration, and querying within tourism information systems.</terms:abstract>
+       
+        <dc:description xml:lang="en">Description
 The Intelligent Tourism and Recommendations ontology provides a detailed semantic representation of the tourism domain, with a focus on intelligent data processing and personalized recommendations. 
 It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to enable inference and reasoning.
 
@@ -57,23 +62,20 @@ Inside Protegé (The software used to develop the ontology) the reasoner used wa
 Extensibility
 The ontology is designed to be extensible and adaptable. 
 New classes, properties, and individuals can be incorporated as the need arises.</dc:description>
-        <dc:title>Intelligent Tourism and Recommendations</dc:title>
-        <rdfs:comment>This ontology is about &quot;intelligent tourism&quot;, a term that describes the different POI (points of interest) that there are in different countries.</rdfs:comment>
-        <rdfs:isDefinedBy>The authors of this ontology have been:
+        <dc:title xml:lang="en">Intelligent Tourism and Recommendations</dc:title>
+        <rdfs:comment xml:lang="en">This ontology is about &quot;intelligent tourism&quot;, a term that describes the different POI (points of interest) that there are in different countries.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">The authors of this ontology have been:
 
 Pedro Sánchez
 
 Gaizka Majdenic
 
-Francesc Martínez</rdfs:isDefinedBy>
-        <owl:versionInfo>This is V2.0</owl:versionInfo>
-        <terms:abstract>The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.
-It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. 
-Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.
-It enables interoperability, data integration, and querying within tourism information systems.</terms:abstract>
+Francesc Martínez</rdfs:isDefinedBy xml:lang="en">
+        <owl:versionInfo xml:lang="en">This is V2.0</owl:versionInfo>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-12</terms:created>
-        <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
-        <vann:preferredNamespacePrefix>itandrec</vann:preferredNamespacePrefix>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
+        <vann:preferredNamespacePrefix xml:lang="en">itandrec</vann:preferredNamespacePrefix>
+
     </owl:Ontology>
     
 
