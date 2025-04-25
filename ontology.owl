@@ -1,16 +1,63 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#"
      xml:base="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#vann:"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:"
      xmlns:ontology="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl"/>
+        <dc:description>Description
+The Intelligent Tourism and Recommendations ontology provides a detailed semantic representation of the tourism domain, with a focus on intelligent data processing and personalized recommendations. 
+It is built using OWL (Web Ontology Language) to ensure logical consistency and interoperability, and it incorporates SWRL rules to enable inference and reasoning.
+
+Core Concepts
+Hotel: 
+Represents general lodging businesses. It is a superclass for more specific types such as RuralHotel. 
+Each hotel is described using properties such as hasName, hasStarRating, and hasLocation.
+
+Restaurant: 
+Represents food establishments. 
+Restaurants are modeled with attributes like hasAveragePrice, hasCuisineType, and locatedIn, enabling filtering and recommendation based on customer budget and tastes.
+
+TouristAttraction: 
+Captures points of interest such as monuments, museums, or natural parks. 
+These are usually the main reasons to visit a particular city.
+
+Properties
+Object Properties: Define relationships between instances of different classes. Examples include:
+
+locatedIn – connects a hotel or restaurant to a Location
+
+operatedBy - connects a public transport service to the company that operates it.
+
+Data Properties: Define literal attributes. Examples include:
+
+hasName – assigns a name to a hotel, restaurant, or location
+
+hasAveragePrice – expresses cost information, for filtering options based on budget
+
+hasRating – allows representation of user ratings on a 0 to 5 scale.
+
+Individuals
+The ontology contains a rich set of individuals (named instances) that represent actual or example entities such as hotel_97, restaurant_38, and specific City instances. 
+These individuals are populated with data that allows reasoning engines to simulate recommendations or answer semantic queries.
+
+Rules and Inference
+Using SWRL (Semantic Web Rule Language), the ontology supports rule-based reasoning to infer new facts. 
+Inside Protegé (The software used to develop the ontology) the reasoner used was Pellet.
+
+Extensibility
+The ontology is designed to be extensible and adaptable. 
+New classes, properties, and individuals can be incorporated as the need arises.</dc:description>
+        <dc:title>Intelligent Tourism and Recommendations</dc:title>
         <rdfs:comment>This ontology is about &quot;intelligent tourism&quot;, a term that describes the different POI (points of interest) that there are in different countries.</rdfs:comment>
         <rdfs:isDefinedBy>The authors of this ontology have been:
 
@@ -19,7 +66,14 @@ Pedro Sánchez
 Gaizka Majdenic
 
 Francesc Martínez</rdfs:isDefinedBy>
-        <owl:versionInfo>This is V1.8</owl:versionInfo>
+        <owl:versionInfo>This is V2.0</owl:versionInfo>
+        <terms:abstract>The Intelligent Tourism and Recommendations ontology provides a framework for modeling key concepts, entities, and relationships within the domain of smart tourism.
+It captures knowledge about accommodation options (such as hotels and rural hotels), restaurants, and their associated attributes like names, prices, and types. 
+Using OWL and SWRL, the ontology supports intelligent reasoning over tourism-related data, facilitating advanced recommendation systems and decision-making.
+It enables interoperability, data integration, and querying within tourism information systems.</terms:abstract>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-12</terms:created>
+        <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
+        <vann:preferredNamespacePrefix>itandrec</vann:preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -36,10 +90,52 @@ Francesc Martínez</rdfs:isDefinedBy>
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:abstract"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:created -->
+
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:created"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:license -->
+
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#terms:license"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#vann:preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl#vann:preferredNamespacePrefix"/>
     
 
 
