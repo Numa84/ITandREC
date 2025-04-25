@@ -9,10 +9,7 @@
 <link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
-<meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
-	<dark-mode-toggle class="slider"></dark-mode-toggle>
-</div>
+
 </head> 
 
 <body>
