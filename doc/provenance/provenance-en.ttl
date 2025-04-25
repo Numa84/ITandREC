@@ -1,0 +1,23 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl> a prov:Entity;
+	 dc:title "Intelligent Tourism and Recommendations";
+	 prov:wasAttributedTo <https://orcid.org/0009-0005-9692-3356>;
+	 dc:creator <https://orcid.org/0009-0005-9692-3356>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/main/docs/ontology.owl>;
+	 prov:wasRevisionOf < https://raw.githubusercontent.com/Numa84/ITandREC/refs/heads/Numa84-patch-1.8/docs/ontology.owl>;
+	 prov:wasGeneratedAt "04/12/2025";
+.
+:agent0 a prov:Agent; foaf:name "Gaizka Madjenic".
+:agent1 a prov:Agent; foaf:name "Francesc Martinez".
+:agent2 a prov:Agent; foaf:name "Gaizka Madjenic".
+:agent3 a prov:Agent; foaf:name "Francesc Martinez".
+:agent4 a prov:Agent; foaf:name "Pedro Sánchez".
